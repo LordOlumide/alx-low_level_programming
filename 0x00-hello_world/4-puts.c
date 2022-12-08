@@ -1,7 +1,11 @@
 #include <stdio.h>
 
-/*
- * This program prints a particular string
+/**
+ * main - Entry point
+ *
+ * Description: 'This program prints a particular string'
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
