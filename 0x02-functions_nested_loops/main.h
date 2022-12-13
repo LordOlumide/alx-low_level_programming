@@ -1,6 +1,6 @@
 #include <stdio.h>
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef main.h
+#define main.h
 
 /**
  * print_alphabet - void function
