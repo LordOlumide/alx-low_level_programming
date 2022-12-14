@@ -1,3 +1,5 @@
+#ifndef main_h
+#define main_h
 
 /**
  * print_alphabet - void function
@@ -18,3 +20,5 @@ void print_alphabet(void)
 	}
 	putchar('\n');
 }
+
+#endif
