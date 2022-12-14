@@ -24,6 +24,8 @@ void times_table(void)
 			a += adder;
 			adder++;
 		}
+		_putchar('\n');
+		a = 0;
 		no_of_times++;
 	}
 }
