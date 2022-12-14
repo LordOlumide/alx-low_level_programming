@@ -1,4 +1,3 @@
-#include "main.h"
 
 /**
  * print_alphabet - void function
@@ -14,8 +13,8 @@ void print_alphabet(void)
 
 	while (n <= 122)
 	{
-		_putchar(n);
+		putchar(n);
 		n++;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
