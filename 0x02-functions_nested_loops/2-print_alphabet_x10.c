@@ -21,6 +21,7 @@ void print_alphabet_x10(void)
 			n++;
 		}
 		_putchar('\n');
+		n = 97;
 		i++;
 	}
 }
