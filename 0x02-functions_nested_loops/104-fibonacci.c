@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+unsigned long int fib(int j);
+
 /**
  * main - Entry point
  * Description: 'print first 98 fib nums'
@@ -8,22 +10,35 @@
 
 int main(void)
 {
-	unsigned long long int a, b, c;
 	int i;
 
-	a = 1;
-	b = 2;
-
-	printf("%llu, %llu", a, b);
-
-	for (i = 0; i < 96; i++)
+	for (i = 0; i < 98; i++)
 	{
-		c = a + b;
-		printf(", %llu", c);
-		a = b;
-		b = c;
+		printf("%lu", fib(i));
+		if (i < 97)
+		{
+			printf(", ");
+		}
+		i++;
 	}
 	printf("\n");
 
 	return (0);
+}
+
+/**
+ * fib - 'Fibonnaci number calculator'
+ * @j: number it will calculate
+ *
+ * Return: fib number
+ */
+
+unsigned long int fib(int j)
+{
+	if (j == 0)
+		return (0);
+	else if (j == 1)
+		return (1);
+	else
+		return (fib(j - 1) + fib(j - 2));
 }
