@@ -22,10 +22,10 @@ void times_table(void)
 				_putchar(' ');
 			}
 			a += adder;
-			adder++;
 		}
 		_putchar('\n');
 		a = 0;
+		adder++;
 		no_of_times++;
 	}
 }
