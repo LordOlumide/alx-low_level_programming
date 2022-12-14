@@ -65,7 +65,7 @@ void printnum(int v)
 	else if (v >= 100 && v < 1000)
 	{
 		_putchar((v / 100) + '0');
-		_putchar((v / 10) + '0');
+		_putchar(((v - ((v /100) * 100)) / 10) + '0');
 		_putchar((v % 10) + '0');
 	}
 }
