@@ -12,11 +12,14 @@ void print_times_table(int n)
 	int a = 0, row_num = n + 1, col_num = n + 1;
 	int adder = 0;
 
+	if (n > 15 || n < 0)
+		return;
+
 	while (row_num > 0)
 	{
 		while (col_num > 0)
 		{
-			_putchar(a);
+			_putchar(a + '0');
 			a += adder;
 			if (col_num != 1)
 			{
