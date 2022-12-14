@@ -9,8 +9,8 @@
 int main(void)
 {
 	int a, b, c, i;
-	int a = 1;
-	int b = 2;
+	a = 1;
+	b = 2;
 
 	printf("%d, %d", a, b);
 
