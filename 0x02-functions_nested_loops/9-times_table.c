@@ -11,7 +11,7 @@ void times_table(void)
 	int a = 0;
 	int no_of_rows = 0, no_of_columns = 0, adder = 0;
 
-	while (no_of_rows < 9)
+	while (no_of_rows < 10)
 	{
 		while (no_of_columns < 10)
 		{
@@ -28,6 +28,10 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
+				if (a <= 9)
+				{
+					_putchar(' ');
+				}
 			}
 			a += adder;
 			no_of_columns++;
