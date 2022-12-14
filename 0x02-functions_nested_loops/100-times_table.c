@@ -25,13 +25,14 @@ void print_times_table(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
-				if ((a + adder) < 10)
+				if (a < 10)
 					_putchar(' ');
-				if ((a + adder) < 100)
+				if (a < 100)
 					_putchar(' ');
 			}
 			col_num--;
 		}
+		a = 0;
 		adder++;
 		_putchar('\n');
 		col_num = n + 1;
