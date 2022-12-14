@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
  * Description: 'Prints the alphabets'
  *
@@ -17,4 +17,5 @@ void print_alphabet(void)
 		_putchar(n);
 		n++;
 	}
+	_putchar('\n');
 }
