@@ -21,7 +21,7 @@ void jack_bauer(void)
 					first = 0;
 					second = a;
 				}
-				else if (a > 10)
+				else if (a >= 10)
 				{
 					first = a / 10;
 					second = a % 10;
