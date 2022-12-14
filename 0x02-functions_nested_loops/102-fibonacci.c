@@ -14,15 +14,16 @@ int main(void)
 	a = 1;
 	b = 2;
 
-	printf("%d, %d", a, b);
+	printf("%lu, %lu", a, b);
 
 	for (i = 0; i < 48; i++)
 	{
 		c = a + b;
-		printf(", %d", c);
+		printf(", %lu", c);
 		a = b;
 		b = c;
 	}
+	putchar('\n');
 
 	return (0);
 }
