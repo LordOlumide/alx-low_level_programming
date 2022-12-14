@@ -1,24 +1,8 @@
 #ifndef main_h
 #define main_h
 
-/**
- * print_alphabet - void function
- *
- * Description: 'Prints all letters'
- *
- * Return: ALways void(Success)
- */
-
-void print_alphabet(void)
-{
-	int n = 97;
-
-	while (n <= 122)
-	{
-		putchar(n);
-		n++;
-	}
-	putchar('\n');
-}
+int _putchar(char c);
+void print_alphabet(void);
+void print_alphabet_x10(void);
 
 #endif

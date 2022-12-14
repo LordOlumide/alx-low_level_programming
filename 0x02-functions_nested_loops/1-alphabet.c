@@ -1,3 +1,4 @@
+#include "main.h"
 
 /**
  * main - Entry point
@@ -5,11 +6,15 @@
  * Description: 'Prints the alphabets'
  *
  * Return: Always 0(Success)
- */
+*/
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
-}
+	int n = 97;
 
+	while (n <= 122)
+	{
+		_putchar(n);
+		n++;
+	}
+}
