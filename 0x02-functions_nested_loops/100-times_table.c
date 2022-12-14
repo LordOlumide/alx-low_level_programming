@@ -19,7 +19,7 @@ void print_times_table(int n)
 	{
 		while (col_num > 0)
 		{
-			_putchar(a + '0');
+			printnum(a);
 			a += adder;
 			if (col_num != 1)
 			{
