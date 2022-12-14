@@ -18,5 +18,5 @@ void natural(void)
 			total += n;
 		n++;
 	}
-	printf("%d\n", &total);
+	printf("%d\n", total);
 }
