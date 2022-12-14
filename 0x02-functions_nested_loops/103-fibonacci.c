@@ -27,4 +27,6 @@ int main(void)
 		b = c;
 	}
 	printf("%d", total);
+
+	return (0);
 }
