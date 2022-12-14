@@ -1,5 +1,20 @@
 #include <stdio.h>
 
+void natural(void);
+
+/**
+ * main - Entry point
+ *
+ * Description: 'the program'
+ * Return: 0(Success)
+ */
+
+int main(void)
+{
+	natural();
+	return (0);
+}
+
 /**
  * natural - print sum of multiples of 3 or 5
  *
@@ -20,3 +35,4 @@ void natural(void)
 	}
 	printf("%d\n", total);
 }
+
