@@ -8,17 +8,18 @@
 
 int main(void)
 {
-	int a, b, c, i;
+	unsigned long int a, b, c;
+	int i;
 
 	a = 1;
 	b = 2;
 
-	printf("%d, %d", a, b);
+	printf("%lu, %lu", a, b);
 
 	for (i = 0; i < 96; i++)
 	{
 		c = a + b;
-		printf(", %d", c);
+		printf(", %lu", c);
 		a = b;
 		b = c;
 	}
