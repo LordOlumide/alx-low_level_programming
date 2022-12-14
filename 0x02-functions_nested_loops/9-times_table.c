@@ -13,21 +13,18 @@ void times_table(void)
 
 	while (no_of_rows < 9)
 	{
-		while (adder < 9)
+		while (no_of_columns < 9)
 		{
-			while (no_of_columns < 9)
+			_putchar(a + '0');
+			if (adder != 8)
 			{
-				_putchar(a + '0');
-				if (adder != 8)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-				a += adder;
-				no_of_columns++;
+				_putchar(',');
+				_putchar(' ');
 			}
-			no_of_columns = 0;
+			a += adder;
+			no_of_columns++;
 		}
+		no_of_columns = 0;
 		_putchar('\n');
 		a = 0;
 		adder++;
