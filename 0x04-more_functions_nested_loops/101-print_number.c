@@ -2,13 +2,15 @@
 
 /**
  * print_number - prints a number
- * @n: number to print
+ * @c: number to print
  * Return: void
  */
 
-void print_number(int n)
+void print_number(int c)
 {
-	if (n < 0)
+	unsigned int n = c;
+
+	if (c < 0)
 	{
 		_putchar('-');
 		n = -n;
