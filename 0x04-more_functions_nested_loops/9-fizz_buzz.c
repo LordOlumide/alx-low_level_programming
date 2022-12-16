@@ -8,9 +8,7 @@
 
 int main(void)
 {
-	int min, max;
-
-	max = 100;
+	int min;
 
 	for (min = 1; min <= 100; min++)
 	{
