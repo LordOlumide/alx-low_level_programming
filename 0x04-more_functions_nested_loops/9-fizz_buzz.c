@@ -32,4 +32,6 @@ int main(void)
 		_putchar(32);
 	}
 	_putchar(10);
+
+	return (0);
 }
