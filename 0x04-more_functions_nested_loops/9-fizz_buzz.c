@@ -28,9 +28,9 @@ int main(void)
 		else
 			printf("%d", min);
 
-		_putchar(32);
+		putchar(32);
 	}
-	_putchar(10);
+	putchar(10);
 
 	return (0);
 }
