@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - Entry point
@@ -28,8 +27,10 @@ int main(void)
 		else
 			printf("%d", min);
 
-		putchar(32);
+		if (min != 100)
+			putchar(32);
 	}
+	putchar(10);
 
 	return (0);
 }
