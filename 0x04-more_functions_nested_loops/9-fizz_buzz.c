@@ -27,7 +27,7 @@ int main(void)
 			printf("Buzz");
 		}
 		else
-			_putchar( min + '0');
+			printf("%d", min);
 
 		_putchar(32);
 	}
