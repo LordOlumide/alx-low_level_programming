@@ -10,6 +10,11 @@ void print_triangle(int size)
 {
 	int width, a, b;
 
+	if (size <= 0)
+	{
+		putchar(10);
+		return;
+	}
 	for (width = 1; width <= size; width++)
 	{
 		a = size - width;
