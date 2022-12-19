@@ -11,15 +11,17 @@ int _strlen(char *str)
 {
 	int count, i;
 
+	count = 0;
+
 	for (i = 0;; i++)
 	{
-		if (str[i] != '\0')
+		if (str[i] == '\0')
 		{
-			count++;
+			break;
 		}
 		else
 		{
-			break;
+			count++;
 		}
 	}
 	return (count);
