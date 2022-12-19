@@ -22,10 +22,11 @@ void print_rev(char *str)
 		}
 	}
 
-	i = len_of_str;
-	while (i > 0)
+	i = len_of_str - 1;
+	while (i >= 0)
 	{
 		_putchar(str[i]);
+		i--;
 	}
 	_putchar('\n');
 }
