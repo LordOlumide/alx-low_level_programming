@@ -9,5 +9,18 @@
 
 int _strlen(char *str)
 {
-	return (sizeof(*str));
+	int count, i;
+
+	for (i = 0;; i++)
+	{
+		if (str[i] != '\0')
+		{
+			count++;
+		}
+		else
+		{
+			break;
+		}
+	}
+	return (count);
 }
