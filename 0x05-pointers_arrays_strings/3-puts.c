@@ -11,8 +11,16 @@ void _puts(char *str)
 {
 	int i;
 
-	for (i = 0; str[i] != '\n'; i++)
+	for (i = 0;; i++)
 	{
-		_putchar(str[i]);
+		if (str[i] == '\0')
+		{
+			break;
+		}
+		else
+		{
+			_putchar(str[i]);
+		}
 	}
+	_putchar('\n');
 }
