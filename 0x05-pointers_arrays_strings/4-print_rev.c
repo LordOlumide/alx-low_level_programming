@@ -10,6 +10,8 @@ void print_rev(char *str)
 {
 	int len_of_str, i;
 
+	len_of_str = 0;
+
 	for (i = 0;; i++)
 	{
 		if (str[i] == '\0')
@@ -21,6 +23,7 @@ void print_rev(char *str)
 			len_of_str++;
 		}
 	}
+
 
 	i = len_of_str - 1;
 	while (i >= 0)
