@@ -9,9 +9,9 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int s1_len, s2_len, i, return_value;
+	int s1_len, s2_len, i, value;
 
-	return_value = 0;
+	value = 0;
 	s1_len = 0;
 	s2_len = 0;
 	while (1)
@@ -30,10 +30,10 @@ int _strcmp(char *s1, char *s2)
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		if ((s1[i] - s2[i]) != 0)
-			return_value = s1[i] - s2[i];
+			value = s1[i] - s2[i];
 	}
 	if (s2_len > s1_len)
-		return_value = -1;
+		value = -4;
 
-	return (return_value);
+	return (value);
 }
