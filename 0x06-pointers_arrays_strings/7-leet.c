@@ -8,20 +8,18 @@
 
 char *leet(char *a)
 {
-	int i;
+	int i, j;
+
+	char x[6] = {'A', 'E', 'O', 'T', 'L'};
+	char y[6] = {'4', '3', '0', '7', '1'};
 
 	for (i = 0; a[i] != '\0'; i++)
 	{
-		if (a[i] == 65 || a[i] == 97)
-			a[i] = 52;
-		else if (a[i] == 69 || a[i] == 101)
-			a[i] = 51;
-		else if (a[i] == 79 || a[i] == 111)
-			a[i] = 48;
-		else if (a[i] == 84 || a[i] == 116)
-			a[i] = 55;
-		else if (a[i] == 76 || a[i] == 108)
-			a[i] = 49;
+		for (j = 0; j < 5; j++)
+		{
+			if (a[i] == x[j] || a[i] - 32 == x[j])
+				a[i] = y[j];
+		}
 	}
 
 	return (a);
