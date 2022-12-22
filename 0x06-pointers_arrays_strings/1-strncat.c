@@ -5,6 +5,7 @@
  * @dest: first string
  * @src: second string
  * @n: max size of src used
+ * Return: char *dest
  */
 
 char *_strncat(char *dest, char *src, int n)
