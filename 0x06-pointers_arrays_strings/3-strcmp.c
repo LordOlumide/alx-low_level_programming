@@ -9,31 +9,30 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int s1_len, s2_len, i, value;
+	int i, value;
 
-	value = 0;
-	s1_len = 0;
-	s2_len = 0;
+
 	while (1)
 	{
-		if (s1[s1_len] == '\0')
+		if (s1[i] == '\0' && s2[i] == '\0')
 			break;
-		s1_len++;
-	}
-	while (1)
-	{
-		if (s2[s2_len] == '\0')
+		else if (s1[i] == '\0')
+		{
+			value = s2[i];
 			break;
-		s2_len++;
-	}
-
-	for (i = 0; s1[i] != '\0'; i++)
-	{
-		if ((s1[i] - s2[i]) != 0)
+		}
+		else if (s2[i] == '\0')
+		{
+			value = s1[i];
+			break;
+		}
+		else if (s1[i] != s2[i])
+		{
 			value = s1[i] - s2[i];
+			break;
+		}
+		else
+			i++;
 	}
-	if (s2_len > s1_len)
-		value = -4;
-
 	return (value);
 }
