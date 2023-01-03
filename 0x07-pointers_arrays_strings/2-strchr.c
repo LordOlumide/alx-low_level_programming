@@ -10,14 +10,14 @@
 
 char *_strchr(char *s, char c)
 {
-	int num, b;
+	unsigned int num, b;
 
 	num = 0;
 	while (s[num] != '\0')
 	{
 		num++;
 	}
-	for (b = 0; b < num; b++)
+	for (b = 0; b < num - 1; b++)
 	{
 		if (s[b] == c)
 			return (&(s[b]));
