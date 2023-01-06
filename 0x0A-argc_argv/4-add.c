@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -29,7 +30,7 @@ int main(int argc, char *argv[])
 			}
 			else
 			{
-				if (argv[i] != "0")
+				if (strcmp(argv[i], "0") != 0)
 				{
 					printf("Error\n");
 					return (1);
