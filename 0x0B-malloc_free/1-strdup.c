@@ -12,15 +12,15 @@ char *_strdup(char *str)
 	char *arr;
 	int i = 0, count = 0;
 
-	if (*(str) == '\0')
-		return ('\0');
+	if (str == NULL)
+		return (NULL);
 
 	while (str[i] != '\0')
 	{
 		count++;
 		i++;
 	}
-	arr = malloc(count);
+	arr = malloc(count + 1);
 	if (!arr)
 		return ('\0');
 
@@ -28,5 +28,7 @@ char *_strdup(char *str)
 	{
 		arr[i] = str[i];
 	}
+	arr[i + 1] = '\0';
+
 	return (arr);
 }
