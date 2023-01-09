@@ -12,10 +12,10 @@ char *_strdup(char *str)
 	char *arr;
 	int i = 0, count = 0;
 
-	if (str == '\0')
+	if (&(str) == '\0')
 		return ('\0');
 
-	while (str[i] != '\0')
+	while (&(str[i]) != '\0')
 	{
 		count++;
 		i++;
