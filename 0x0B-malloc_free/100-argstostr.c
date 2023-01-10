@@ -29,13 +29,13 @@ char *argstostr(int ac, char **av)
 	}
 	count++;
 
-	str = malloc(count * sizeof(char));
+	str = (char *)malloc(count * sizeof(char));
 
 	k = 0;
 	for (i = i; i < ac; i++)
 	{
 		j = 0;
-		while (av[i][j] != "\0")
+		while (av[i][j] != '\0')
 		{
 			str[k] = av[i][j];
 			k++;
