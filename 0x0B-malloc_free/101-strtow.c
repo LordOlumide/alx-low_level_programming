@@ -13,7 +13,7 @@ char **strtow(char *str)
 	int i, j, arr_len = 0;
 	char **value;
 
-	if (str == null || str == "")
+	if (str == NULL || strcmp(str, ""))
 		return (NULL);
 
 	arr_len = 1;
