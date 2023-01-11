@@ -24,6 +24,6 @@ char **strtow(char *str)
 	}
 
 	value = (char **)malloc(sizeof(char *) * arr_len);
-	
+
 	return (value);
 }
