@@ -22,7 +22,6 @@ char **strtow(char *str)
 		if (str[i] == ' ')
 			arr_len++;
 	}
-	arr_len++;
-
-	value = (char **)malloc(sizeof())
+	
+	return (value);
 }
