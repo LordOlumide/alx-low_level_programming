@@ -10,7 +10,7 @@
 
 char **strtow(char *str)
 {
-	int i, j, arr_len = 0;
+	int i, arr_len = 0;
 	char **value;
 
 	if (str == NULL || strcmp(str, ""))
@@ -22,6 +22,8 @@ char **strtow(char *str)
 		if (str[i] == ' ')
 			arr_len++;
 	}
+
+	value = (char **)malloc(sizeof(char *) * arr_len);
 	
 	return (value);
 }
