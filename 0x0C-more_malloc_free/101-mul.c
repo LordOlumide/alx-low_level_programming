@@ -11,11 +11,17 @@
 
 int main(int argc, char *argv[])
 {
+	int num;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	return (atoi(*argv[0]) * atoi(*argv[1]));
+	num = atoi(argv[0]) * atoi(argv[1]);
+
+	printf("%d\n", num);
+
+	return (0);
 }
